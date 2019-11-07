@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edefef">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context="cources.example.com.couresmanger.ActivityDetail.ActivitDetailCourse">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/img_cource_header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/dt_coure_img"
+            android:gravity="center"
+            android:src="@color/cardview_dark_background" />
+
+        <android.support.v7.widget.AppCompatButton
+
+            android:id="@+id/reseve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_style"
+            android:padding="10dp"
+            android:text="@string/enrolll"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="11dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/namming"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/namedeatail"
+                android:textSize="19dp"
+                android:paddingStart="10dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+
+                android:paddingStart="10dp"
+                android:layout_marginStart="40dp" />
+
+            <!--
+       -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/instractordetail"
+                android:textSize="19dp"
+
+                android:paddingStart="10dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/instractot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+
+
+                android:layout_marginStart="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/pricedeatil"
+                android:textSize="19dp"
+
+
+                android:paddingStart="10dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+
+
+                android:layout_marginStart="20dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/timeline"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/timedetail"
+            android:textSize="19dp"
+
+
+            android:paddingStart="10dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp" />
+
+
+    </LinearLayout>
+</ScrollView>

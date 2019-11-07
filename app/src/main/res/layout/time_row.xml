@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+
+    >
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="18dp"
+        card_view:cardBackgroundColor="#602B608A"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPaddingLeft="10dp"
+        card_view:contentPaddingRight="10dp"
+
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/daydash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/day"
+                android:layout_weight="2"
+                android:text="@string/icon"
+                android:textSize="15dp"
+
+                android:layout_toEndOf="@+id/day" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/daydash"
+                android:layout_weight="1"
+                android:textSize="15dp"
+
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/daydash" />
+
+            <TextView
+                android:id="@+id/toooo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/from"
+                android:layout_weight="2"
+                android:text="@string/ii"
+                android:textSize="25dp"
+
+
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/from" />
+
+            <TextView
+                android:id="@+id/too"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@+id/toooo"
+                android:layout_weight="1"
+                android:textSize="15dp"
+
+                android:layout_toEndOf="@+id/toooo"
+                android:layout_marginStart="11dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
